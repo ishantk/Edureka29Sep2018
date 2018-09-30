@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import java.util.Date;
@@ -11,6 +13,8 @@ import java.util.Date;
 // AppCompatActivity is an API to create Activity i.e. UI
 public class MainActivity extends AppCompatActivity {
 
+    // Declare Reference to the View here !!
+    WebView web; // web is a ref variable which will point to WebView Object
 
     // onCreate is an overrided method which serves as a constructor to us
     // is executed when object of activity is created by Android System
@@ -19,10 +23,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState); // calling parent's method ? Parent will maintain state of Activity
 
         // Layout is set on Activity
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_table);
         Log.i("MainActivity","==onCreate==");
 
         //System.out.print("MainActivity - onCreate");
+
+        setContentView(R.layout.activity_linear);
+
+        // findViewById will create the Object for us based on id we give as input
+        web = findViewById(R.id.webView); // Inversion Of Control (IOC)
+        // should be executed after setContentView
+
+        WebViewClient client = new WebViewClient();
+        web.setWebViewClient(client); // make WebView a Client
+        web.getSettings().setJavaScriptEnabled(true);
+        web.loadUrl("https://www.ndtv.com/"); // to load the URL we need Internet Permission
+
     }
 
 
