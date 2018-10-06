@@ -15,14 +15,24 @@
         <!-- MAIN & LAUNCHER works as a combination for our Activity to be launched when we press app icon -->
 
         <activity android:name=".MainActivity" />
-        <activity android:name=".ViewsDemoActivity"></activity>
-        <activity android:name=".DateTimePickerActivity">
+        <activity android:name=".ViewsDemoActivity" />
+        <activity android:name=".DateTimePickerActivity" />
+        <activity android:name=".BroadcastRcvrDemoActivity" />
+        <activity android:name=".ActivityOne"></activity>
+        <activity android:name=".ActivityTwo">
+
+            <!-- <intent-filter> -->
+            <!-- &lt;!&ndash; User Defined Action&ndash;&gt; -->
+            <!-- <action android:name="co.edureka.edureka29sep2018.activitytwo" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".MyFragmentsActivity">
 
         </activity>
-        <activity android:name=".BroadcastRcvrDemoActivity">
+        <activity android:name=".NotificationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
