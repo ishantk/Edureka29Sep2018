@@ -3,6 +3,8 @@
     package="co.edureka.edureka29sep2018">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -37,15 +39,20 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ConfigDemoActivity"
-            android:configChanges="orientation"></activity>
+            android:configChanges="orientation" />
         <activity
             android:name=".OrientationLayoutActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".FilesDemoActivity" />
+        <activity android:name=".MySettingsActivity"></activity>
+        <activity android:name=".MyMusicActivity">
 
         </activity>
-        <activity android:name=".MenuActivity">
+        <activity android:name=".AnimationDemoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
