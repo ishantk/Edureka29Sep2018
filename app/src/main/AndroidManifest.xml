@@ -3,6 +3,7 @@
     package="co.edureka.edureka29sep2018">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -45,11 +46,18 @@
             android:screenOrientation="portrait" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".FilesDemoActivity" />
-        <activity android:name=".MySettingsActivity"></activity>
-        <activity android:name=".MyMusicActivity">
+        <activity android:name=".MySettingsActivity" />
+        <activity android:name=".MyMusicActivity" />
+        <activity android:name=".AnimationDemoActivity" />
+        <activity android:name=".AllBooksActivity">
 
         </activity>
-        <activity android:name=".AnimationDemoActivity">
+
+        <service
+            android:name=".BooksFetchService"
+            android:exported="false" />
+
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
