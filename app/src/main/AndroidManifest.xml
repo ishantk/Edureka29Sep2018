@@ -6,8 +6,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -51,7 +51,7 @@
         <activity android:name=".MySettingsActivity" />
         <activity android:name=".MyMusicActivity" />
         <activity android:name=".AnimationDemoActivity" />
-        <activity android:name=".AllBooksActivity"></activity>
+        <activity android:name=".AllBooksActivity" />
 
         <service
             android:name=".BooksFetchService"
@@ -64,7 +64,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyLocationActivity"></activity>
+        <activity android:name=".MyLocationActivity" />
+        <activity android:name=".ui.AddUserActivity" />
+
+        <provider
+            android:name=".provider.MyContentProvider"
+            android:authorities="co.edureka.edureka29sep2018.provider.mycp"
+            android:enabled="true"
+            android:exported="true"></provider>
     </application>
 
 </manifest>
