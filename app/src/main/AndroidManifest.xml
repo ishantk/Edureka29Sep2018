@@ -57,13 +57,7 @@
             android:name=".BooksFetchService"
             android:exported="false" />
 
-        <activity android:name=".SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".SplashActivity"></activity>
         <activity android:name=".MyLocationActivity" />
         <activity android:name=".ui.AddUserActivity" />
 
@@ -71,7 +65,18 @@
             android:name=".provider.MyContentProvider"
             android:authorities="co.edureka.edureka29sep2018.provider.mycp"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
+
+        <activity android:name=".MyLocaleActivity">
+
+        </activity>
+        <activity android:name=".SensorDemoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -81,6 +81,8 @@ public class AddUserActivity extends AppCompatActivity implements View.OnClickLi
             users.add(user); // Display this ArrayList on ListView or RecyclerView as per your requirements
         }
 
+        cursor.close();
+
     }
 
     void updateInDB(){

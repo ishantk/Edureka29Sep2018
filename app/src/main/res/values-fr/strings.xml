@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">MyMusic</string>
-    <string name="title">Welcome Students</string>
-    <string name="text">Android Tutorials By Edureka for You</string>
+    <string name="app_name">Ma musique</string>
+    <string name="title">Bienvenue aux étudiants</string>
+    <string name="text">Tutoriels Android par Edureka pour vous</string>
 
 
     <string name="title_activity_nav">NavActivity</string>
